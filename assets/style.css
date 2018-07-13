@@ -1,0 +1,30 @@
+.navbar{
+    align-items:right;
+    text-align:right;
+    background-color:black;
+
+    /* float:right; */
+}
+
+.jumbotron{
+    padding-top:0;
+    padding:15px;
+    margin-top:0;
+}
+h1{
+    clear:left;
+}
+.footer{
+    padding:20px;
+    margin-top:50px;
+    color:white;
+    font-size:20px;
+    background-color:black;
+    text-align:center;
+    border-top:solid;
+    border-color:black;
+    position:absolute;
+    bottom:0;
+    right:0;
+    height:60px;   /* Height of the footer */
+}
