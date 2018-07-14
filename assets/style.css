@@ -6,6 +6,7 @@
     /* float:right; */
 }
 
+
 .jumbotron{
     padding-top:0;
     padding:15px;
@@ -21,10 +22,13 @@ h1{
     font-size:20px;
     background-color:black;
     text-align:center;
-    border-top:solid;
-    border-color:black;
     position:absolute;
     bottom:0;
     right:0;
     height:60px;   /* Height of the footer */
+}
+.card-img-top{
+    height: 100%;
+    width: 100%;
+    left:0;
 }
