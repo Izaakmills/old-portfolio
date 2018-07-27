@@ -1,19 +1,19 @@
 .navbar{
-    align-items:right;
-    text-align:right;
     background-color:black;
-
-    /* float:right; */
+    width:100%;
+    padding:10px;
+    text-align:center;
+    position: relative;
+    top:0;
+    left:0;
 }
-
-
 .jumbotron{
     padding-top:0;
     padding:15px;
     margin-top:0;
 }
 h1{
-    clear:left;
+    margin:20px;
 }
 .footer{
     padding:20px;
