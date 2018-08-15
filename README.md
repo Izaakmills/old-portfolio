@@ -1,3 +1,3 @@
 # IMILLS.GITHUB.IO
 
-* This is my bio page
+* Some info about me
