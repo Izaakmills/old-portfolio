@@ -35,6 +35,8 @@ container{
 }
 .card{
     text-align: center;
+    border:5px;
+    margin:10px;
     height: 100%;
     width: 100%;
 }
@@ -57,6 +59,7 @@ h1{
     float:left;
 }
 h2{
+    margin:15px;
     color:black;
     text-align: center;
 }
