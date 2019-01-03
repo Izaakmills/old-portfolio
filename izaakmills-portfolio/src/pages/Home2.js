@@ -13,16 +13,22 @@ import Grid from '@material-ui/core/Grid';
 import Toolbar from '@material-ui/core/Toolbar';
 import Typography from '@material-ui/core/Typography';
 import { withStyles } from '@material-ui/core/styles';
+import Image from '../assets/images/whitecappic.jpg'
 
 const styles = theme => ({
   appBar: {
-    position: 'relative',
+    position: 'sticky',
   },
   icon: {
     marginRight: theme.spacing.unit * 2,
   },
   heroUnit: {
     backgroundColor: theme.palette.background.paper,
+    backgroundImage: `url(${Image})`,
+    backgroundRepeat:"no-repeat",
+    backgroundPosition:"center",
+    Opacity:5,
+    Radius: "50%"
   },
   heroContent: {
     maxWidth: 600,
@@ -41,6 +47,8 @@ const styles = theme => ({
       marginLeft: 'auto',
       marginRight: 'auto',
     },
+    alignItems:"center",
+    justify:"center"
   },
   cardGrid: {
     padding: `${theme.spacing.unit * 8}px 0`,
@@ -111,15 +119,15 @@ const projects = [
 
 ];
 
-function Album(props) {
+function Home(props) {
   const { classes } = props;
 
   return (
     <React.Fragment>
       <CssBaseline />
-      <AppBar position="static" className={classes.appBar}>
+      <AppBar className={classes.appBar}>
         <Toolbar>
-          <PersonIcon className={classes.icon} href="https://github.com/Izaakmills"/>
+          <PersonIcon className={classes.icon} />
           <Typography variant="h6" color="inherit" noWrap>
             Izaak Mills
           </Typography>
@@ -147,7 +155,6 @@ function Album(props) {
           </div>
         </div>
         <div className={classNames(classes.layout, classes.cardGrid)}>
-          {/* End hero unit */}
           <Grid container spacing={40}>
             {projects.map(project => (
               <Grid item key={project} sm={6} md={6} lg={6}>
@@ -165,7 +172,7 @@ function Album(props) {
                       {project.comments}
                     </Typography>
                   </CardContent>
-                  <CardActions>
+                  <CardActions >
                     <Button size="small" color="primary">
                       Github
                     </Button>
@@ -193,8 +200,8 @@ function Album(props) {
   );
 }
 
-Album.propTypes = {
+Home.propTypes = {
   classes: PropTypes.object.isRequired,
 };
 
-export default withStyles(styles)(Album);
+export default withStyles(styles)(Home);
