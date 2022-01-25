@@ -53,13 +53,20 @@ const projects = [
 export default function MainContent() {
   return (
     <div className="bg-white">
+      <div className="bg-white">
+        <div className="max-w-7xl mx-auto py-16 px-4 sm:py-24 sm:px-6 lg:px-8">
+          <div className="text-center">
+            <p className="mt-1 text-4xl font-extrabold text-gray-900 sm:text-5xl sm:tracking-tight lg:text-6xl">
+              Hi, I'm Izaak
+            </p>
+            <p className="max-w-xl mt-5 mx-auto text-xl text-gray-500">
+              I enjoy learning new things and solving problems.
+            </p>
+          </div>
+        </div>
+      </div>
       <div className="relative pb-32 bg-gray-800">
         <div className="absolute inset-0">
-          <img
-            className="w-full h-full object-cover"
-            src={WhiteCapPic}
-            alt=""
-          />
           <div
             className="absolute inset-0 bg-gray-800 mix-blend-multiply"
             aria-hidden="true"
@@ -67,11 +74,8 @@ export default function MainContent() {
         </div>
         <div className="relative max-w-7xl mx-auto py-24 px-4 sm:py-32 sm:px-6 lg:px-8">
           <h1 className="text-4xl font-extrabold tracking-tight text-white md:text-5xl lg:text-6xl">
-            About me
+            Bootcamp projects
           </h1>
-          <p className="mt-6 max-w-3xl text-xl text-gray-300">
-            I enjoy learning new things and solving problems.
-          </p>
         </div>
       </div>
 
@@ -88,7 +92,16 @@ export default function MainContent() {
                 className="flex flex-col bg-white rounded-2xl shadow-xl mb-12 justify-center"
               >
                 <div className="flex-1 relative pt-16 px-6 pb-8 md:px-8 text-center">
-                  <img alt={project.name} src={project.image} lazyLoad={true} />
+                  <img
+                    style={{
+                      objectFit: "cover",
+                      width: "320px",
+                      height: "180px",
+                    }}
+                    alt={project.name}
+                    src={project.image}
+                    lazyLoad={true}
+                  />
                   <h3 className="text-xl font-medium text-gray-900">
                     {project.name}
                   </h3>
