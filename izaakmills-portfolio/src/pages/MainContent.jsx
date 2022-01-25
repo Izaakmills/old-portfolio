@@ -94,9 +94,8 @@ export default function MainContent() {
                 <div className="flex-1 relative pt-16 px-6 pb-8 md:px-8 text-center">
                   <img
                     style={{
-                      objectFit: "cover",
-                      width: "320px",
-                      height: "180px",
+                      height: "auto",
+                      width: "100%",
                     }}
                     alt={project.name}
                     src={project.image}
@@ -114,7 +113,7 @@ export default function MainContent() {
                     href={project.githubLink}
                     className="text-base font-medium text-indigo-700 hover:text-indigo-600"
                   >
-                    Github link<span aria-hidden="true"> &rarr;</span>
+                    Github <span aria-hidden="true"> &rarr;</span>
                   </a>
                 </div>
                 <div className="p-6 bg-gray-50 rounded-bl-2xl rounded-br-2xl md:px-8">
