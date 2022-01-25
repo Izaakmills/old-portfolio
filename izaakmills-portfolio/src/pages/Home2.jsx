@@ -141,14 +141,14 @@ function Home(props) {
               About Me
             </Typography>
             <Typography variant="h6" align="center" color="textSecondary" paragraph>
-              <p>College educated, workforce integrated, never satiated. Most importantly a Philomath</p>
+              <p></p>
             </Typography>
             <div className={classes.heroButtons}>
               <Grid container spacing={16} justify="center">
                 <Grid item>
-                  <Button href="https://github.com/Izaakmills"variant="contained" color="primary">
+                  <a href="https://github.com/Izaakmills"variant="contained" color="primary">
                     Github
-                  </Button>
+                  </a>
                 </Grid>
               </Grid>
             </div>

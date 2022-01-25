@@ -1,14 +1,13 @@
-import React, { Component } from 'react';
-import Home2 from './pages/Home2'
-import './App.css';
+import React, { Component } from "react";
+import MainContent from "./pages/MainContent";
+import "./App.css";
 
 class App extends Component {
   render() {
     return (
       <div className="App">
-        <Home2 />
+        <MainContent />
       </div>
-      
     );
   }
 }
